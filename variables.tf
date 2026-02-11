@@ -17,7 +17,7 @@ EOT
     server_url              = string
     service_name            = string
     spring_cloud_service_id = string
-    globally_enabled        = optional(bool, false)
+    globally_enabled        = optional(bool) # Default: false
   }))
 }
 
