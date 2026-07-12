@@ -1,3 +1,7 @@
+output "spring_cloud_elastic_application_performance_monitorings_id" {
+  description = "Map of id values across all spring_cloud_elastic_application_performance_monitorings, keyed the same as var.spring_cloud_elastic_application_performance_monitorings"
+  value       = { for k, v in azurerm_spring_cloud_elastic_application_performance_monitoring.spring_cloud_elastic_application_performance_monitorings : k => v.id }
+}
 output "spring_cloud_elastic_application_performance_monitorings_application_packages" {
   description = "Map of application_packages values across all spring_cloud_elastic_application_performance_monitorings, keyed the same as var.spring_cloud_elastic_application_performance_monitorings"
   value       = { for k, v in azurerm_spring_cloud_elastic_application_performance_monitoring.spring_cloud_elastic_application_performance_monitorings : k => v.application_packages }
